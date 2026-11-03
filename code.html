@@ -1,0 +1,615 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Neevaxius Kenzie — Frontend & Web Developer Portfolio</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800&family=Space+Grotesk:wght@500;700&display=swap" rel="stylesheet">
+    <link rel=stylesheet href=style.css>
+</head>
+<body>
+
+  <!-- FLOATING NAVIGATION BAR -->
+  <header class="nav-wrapper">
+    <nav class="navbar" id="navbar">
+      <a href="#home" class="nav-logo" aria-label="Neevaxius Portfolio">
+        PORTOFOLIO<span class="nav-logo-dot"></span>
+      </a>
+
+      <ul class="nav-links">
+        <li><a href="#home" class="nav-link active">Home</a></li>
+        <li><a href="#about" class="nav-link">About</a></li>
+        <li><a href="#experience" class="nav-link">Experience</a></li>
+        <li><a href="#projects" class="nav-link">Projects</a></li>
+        <li><a href="#contact" class="nav-link">Contact</a></li>
+      </ul>
+
+      <div class="nav-actions">
+        <button class="theme-toggle-btn" id="themeToggle" aria-label="Toggle Dark Mode">
+          <svg id="themeIcon" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+            <path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"></path>
+          </svg>
+        </button>
+
+        <button class="hamburger-btn" id="menuToggle" aria-label="Open Mobile Menu">
+          <span></span>
+          <span></span>
+          <span></span>
+        </button>
+      </div>
+    </nav>
+  </header>
+
+  <!-- MOBILE MENU DROPDOWN -->
+  <div class="mobile-menu-overlay" id="mobileMenu">
+    <a href="#home" class="mobile-nav-item">Home</a>
+    <a href="#about" class="mobile-nav-item">About</a>
+    <a href="#experience" class="mobile-nav-item">Experience</a>
+    <a href="#projects" class="mobile-nav-item">Projects</a>
+    <a href="#contact" class="mobile-nav-item">Contact</a>
+  </div>
+
+  <!-- HERO SECTION -->
+  <main>
+    <section class="hero-section" id="home">
+      <div class="container">
+        <div class="hero-grid">
+          <!-- LEFT CONTENT -->
+          <div class="hero-left-content reveal">
+            <h1 class="hero-title">
+              Hi, I'm Neevaxius.
+              <span>Frontend Developer &amp; Web Enthusiast</span>
+            </h1>
+
+            <p class="hero-bio">
+              Halo! Saya Neevaxius Kenzie, seorang siswa Rekayasa Perangkat Lunak di SMK Negeri 20 Jakarta yang memiliki ketertarikan dalam pengembangan website dan teknologi digital. Saya senang mempelajari hal baru, membangun aplikasi, serta mengubah ide menjadi pengalaman digital yang menarik dan bermanfaat.
+            </p>
+
+            <div class="hero-cta-group">
+              <a href="#projects" class="btn btn-primary">
+                Explore My Work
+                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><line x1="5" y1="12" x2="19" y2="12"></line><polyline points="12 5 19 12 12 19"></polyline></svg>
+              </a>
+
+              <a href="#contact" class="btn btn-secondary" id="downloadCvBtn" onclick="alert('Placeholder: CV PDF download will be linked here.'); return false;">
+                Download CV
+                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"></path><polyline points="7 10 12 15 17 10"></polyline><line x1="12" y1="15" x2="12" y2="3"></line></svg>
+              </a>
+            </div>
+
+            <div class="hero-social-block">
+              <span class="social-label">Connect</span>
+              <div class="social-icons-row">
+                <a href="https://github.com" target="_blank" rel="noopener noreferrer" class="social-btn" aria-label="GitHub">
+                  <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"></path></svg>
+                </a>
+                <a href="https://linkedin.com" target="_blank" rel="noopener noreferrer" class="social-btn" aria-label="LinkedIn">
+                  <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"></path><rect x="2" y="9" width="4" height="12"></rect><circle cx="4" cy="4" r="2"></circle></svg>
+                </a>
+                <a href="https://instagram.com" target="_blank" rel="noopener noreferrer" class="social-btn" aria-label="Instagram">
+                  <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="2" width="20" height="20" rx="5" ry="5"></rect><path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"></path><line x1="17.5" y1="6.5" x2="17.51" y2="6.5"></line></svg>
+                </a>
+              </div>
+            </div>
+          </div>
+
+          <!-- RIGHT CONTENT: CIRCULAR AVATAR & 3 FLOATING CARDS -->
+          <div class="hero-visual-wrapper reveal">
+            <div class="avatar-halo-bg"></div>
+
+            <div class="avatar-container">
+              <img src="assets/profile-photo.jpg" alt="Neevaxius Kenzie Portrait" class="avatar-image">
+            </div>
+
+            <!-- Card 1 -->
+            <div class="floating-card card-pos-1">
+              <div class="card-icon-box">
+                <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"></circle><line x1="2" y1="12" x2="22" y2="12"></line><path d="M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10 15.3 15.3 0 0 1-4-10 15.3 15.3 0 0 1 4-10z"></path></svg>
+              </div>
+              <div class="floating-card-info">
+                <h4>Web Dev Enthusiast</h4>
+                <p>Clean Code & UI/UX</p>
+              </div>
+            </div>
+
+            <!-- Card 2 -->
+            <div class="floating-card card-pos-2">
+              <div class="card-icon-box">
+                <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="16 18 22 12 16 6"></polyline><polyline points="8 6 2 12 8 18"></polyline></svg>
+              </div>
+              <div class="floating-card-info">
+                <h4>HTML, CSS &amp; JavaScript</h4>
+                <p>Modern Frontend Stack</p>
+              </div>
+            </div>
+
+            <!-- Card 3 -->
+            <div class="floating-card card-pos-3">
+              <div class="card-icon-box">
+                <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polygon points="12 2 2 7 12 12 22 7 12 2"></polygon><polyline points="2 17 12 22 22 17"></polyline><polyline points="2 12 12 17 22 12"></polyline></svg>
+              </div>
+              <div class="floating-card-info">
+                <h4>Laravel &amp; Flutter</h4>
+                <p>Full-Stack Projects</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ABOUT ME SECTION -->
+    <section class="section-border" id="about">
+      <div class="container">
+        <div class="reveal">
+          <span class="section-eyebrow">Personal Background</span>
+          <h2 class="section-title">About Me</h2>
+          <p class="section-subtitle">Get to know me better.</p>
+        </div>
+
+        <div class="about-grid">
+          <div class="about-card-left reveal">
+            <div class="about-badge-header">
+              <span class="student-badge">Vocational Student</span>
+              <div class="terminal-dots">
+                <span></span>
+                <span></span>
+                <span></span>
+              </div>
+            </div>
+
+            <div style="font-family: monospace; font-size: 0.85rem; color: var(--text-muted); margin-bottom: 16px;">
+              // neevaxius_profile.json<br>
+              {<br>
+              &nbsp;&nbsp;"name": "Neevaxius Kenzie",<br>
+              &nbsp;&nbsp;"role": "Frontend Developer",<br>
+              &nbsp;&nbsp;"school": "SMKN 20 Jakarta",<br>
+              &nbsp;&nbsp;"major": "Rekayasa Perangkat Lunak"<br>
+              }
+            </div>
+
+            <div class="about-quote-box">
+              "I believe that every great digital product starts with curiosity, creativity, and a willingness to keep learning."
+            </div>
+
+            <div class="school-info-row">
+              <div class="school-icon-circle">
+                <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 10v6M2 10l10-5 10 5-10 5z"></path><path d="M6 12v5c3 3 9 3 12 0v-5"></path></svg>
+              </div>
+              <div class="school-text">
+                <strong>SMK Negeri 20 Jakarta</strong>
+                <span>Jurusan Rekayasa Perangkat Lunak (RPL)</span>
+              </div>
+            </div>
+          </div>
+
+          <div class="about-content-right reveal">
+            <p>
+              Sebagai siswa SMK Jurusan Rekayasa Perangkat Lunak (RPL), perjalanan belajar saya didorong oleh antusiasme besar untuk merancang antarmuka web yang intuitif dan fungsional. Saya memadukan dasar pemrograman yang kokoh dengan estetika visual yang modern.
+            </p>
+            <p>
+              Fokus utama saya saat ini adalah mendalami ekosistem Frontend development, mulai dari penulisan kode semantik, tata letak responsif murni, hingga integrasi backend dengan framework seperti Laravel serta eksplorasi mobile apps dengan Flutter.
+            </p>
+
+            <div class="about-cards-row">
+              <div class="info-card">
+                <h4>Education</h4>
+                <p>SMKN 20 Jakarta</p>
+                <span style="font-size: 0.775rem; color: var(--text-muted);">Major in RPL</span>
+              </div>
+
+              <div class="info-card">
+                <h4>Interests</h4>
+                <p>Frontend &amp; UI/UX</p>
+                <span style="font-size: 0.775rem; color: var(--text-muted);">Full-Stack Curiosity</span>
+              </div>
+
+              <div class="info-card">
+                <h4>Current Focus</h4>
+                <p>Modern Web Apps</p>
+                <span style="font-size: 0.775rem; color: var(--text-muted);">Responsive Systems</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- EXPERIENCE & SKILLS SECTION -->
+    <section class="section-border" id="experience">
+      <div class="container">
+        <div class="reveal">
+          <span class="section-eyebrow">Technical Capability</span>
+          <h2 class="section-title">My Experience &amp; Skills</h2>
+          <p class="section-subtitle">Teknologi dan keahlian yang aktif saya kembangkan dan aplikasikan dalam proyek.</p>
+        </div>
+
+        <div class="skills-category-grid">
+          <!-- FRONTEND -->
+          <div class="skill-cat-card reveal">
+            <div class="cat-header">
+              <div class="cat-icon">
+                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="16 18 22 12 16 6"></polyline><polyline points="8 6 2 12 8 18"></polyline></svg>
+              </div>
+              <h3>Frontend</h3>
+            </div>
+            <div class="skill-items-list">
+              <div class="skill-item">
+                <span>HTML5</span>
+                <span class="skill-item-tag">Semantic Markup</span>
+              </div>
+              <div class="skill-item">
+                <span>CSS3</span>
+                <span class="skill-item-tag">Flex &amp; Grid</span>
+              </div>
+              <div class="skill-item">
+                <span>JavaScript</span>
+                <span class="skill-item-tag">ES6+ &amp; DOM</span>
+              </div>
+              <div class="skill-item">
+                <span>Responsive Design</span>
+                <span class="skill-item-tag">Mobile First</span>
+              </div>
+            </div>
+          </div>
+
+          <!-- BACKEND -->
+          <div class="skill-cat-card reveal">
+            <div class="cat-header">
+              <div class="cat-icon">
+                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="2" width="20" height="8" rx="2" ry="2"></rect><rect x="2" y="14" width="20" height="8" rx="2" ry="2"></rect><line x1="6" y1="6" x2="6.01" y2="6"></line><line x1="6" y1="18" x2="6.01" y2="18"></line></svg>
+              </div>
+              <h3>Backend</h3>
+            </div>
+            <div class="skill-items-list">
+              <div class="skill-item">
+                <span>PHP</span>
+                <span class="skill-item-tag">Server Scripts</span>
+              </div>
+              <div class="skill-item">
+                <span>Laravel</span>
+                <span class="skill-item-tag">MVC Framework</span>
+              </div>
+              <div class="skill-item">
+                <span>MySQL</span>
+                <span class="skill-item-tag">Relational DB</span>
+              </div>
+            </div>
+          </div>
+
+          <!-- MOBILE -->
+          <div class="skill-cat-card reveal">
+            <div class="cat-header">
+              <div class="cat-icon">
+                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="5" y="2" width="14" height="20" rx="2" ry="2"></rect><line x1="12" y1="18" x2="12.01" y2="18"></line></svg>
+              </div>
+              <h3>Mobile Dev</h3>
+            </div>
+            <div class="skill-items-list">
+              <div class="skill-item">
+                <span>Flutter</span>
+                <span class="skill-item-tag">Cross-Platform</span>
+              </div>
+              <div class="skill-item">
+                <span>Dart</span>
+                <span class="skill-item-tag">Object Oriented</span>
+              </div>
+            </div>
+          </div>
+
+          <!-- TOOLS & DESIGN -->
+          <div class="skill-cat-card reveal">
+            <div class="cat-header">
+              <div class="cat-icon">
+                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 19l7-7 3 3-7 7-3-3z"></path><path d="M18 13l-1.5-7.5L2 2l3.5 14.5L13 18l5-5z"></path><path d="M2 2l7.586 7.586"></path><circle cx="11" cy="11" r="2"></circle></svg>
+              </div>
+              <h3>Tools &amp; Design</h3>
+            </div>
+            <div class="skill-items-list">
+              <div class="skill-item">
+                <span>VS Code</span>
+                <span class="skill-item-tag">IDE &amp; Exts</span>
+              </div>
+              <div class="skill-item">
+                <span>Git &amp; GitHub</span>
+                <span class="skill-item-tag">Version Control</span>
+              </div>
+              <div class="skill-item">
+                <span>Figma</span>
+                <span class="skill-item-tag">UI Wireframing</span>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- LEARNING JOURNEY TIMELINE -->
+        <div class="timeline-container reveal">
+          <div class="timeline-title-row">
+            <h3>Learning Journey &amp; Milestones</h3>
+            <span style="font-size: 0.8rem; color: var(--text-muted); font-weight: 600;">(Editable Experience Track)</span>
+          </div>
+
+          <div class="timeline-list">
+            <div class="timeline-node">
+              <div class="node-marker">03</div>
+              <div class="node-content">
+                <div class="node-content-header">
+                  <h4>Full-Stack Exploration &amp; Capstone Projects</h4>
+                  <span class="node-badge">2024 — Present</span>
+                </div>
+                <p>Mengembangkan aplikasi berbasis framework (Laravel &amp; Flutter) serta mendesain antarmuka portfolio personal yang memprioritaskan performa dan kebersihan kode.</p>
+              </div>
+            </div>
+
+            <div class="timeline-node">
+              <div class="node-marker">02</div>
+              <div class="node-content">
+                <div class="node-content-header">
+                  <h4>Praktek Kerja &amp; Sistem Informasi Sekolah</h4>
+                  <span class="node-badge">2023 — 2024</span>
+                </div>
+                <p>Membangun sistem informasi dan monitoring siswa magang (PKL Portal) menggunakan PHP dan basis data MySQL dengan pemodelan relasional terstruktur.</p>
+              </div>
+            </div>
+
+            <div class="timeline-node">
+              <div class="node-marker">01</div>
+              <div class="node-content">
+                <div class="node-content-header">
+                  <h4>Foundations of Web &amp; Software Engineering</h4>
+                  <span class="node-badge">2022 — 2023</span>
+                </div>
+                <p>Memulai studi RPL di SMKN 20 Jakarta. Menguasai dasar-dasar logika komputasi, algoritma, HTML semantik, styling CSS modern, dan interaktivitas JavaScript.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- PROJECTS SECTION -->
+    <section class="section-border" id="projects">
+      <div class="container">
+        <div class="reveal">
+          <span class="section-eyebrow">Portfolio Showcase</span>
+          <h2 class="section-title">Featured Projects</h2>
+          <p class="section-subtitle">Some projects I've worked on and developed.</p>
+        </div>
+
+        <div class="projects-grid">
+          <!-- PROJECT 01 -->
+          <article class="project-card reveal">
+            <div class="project-preview">
+              <img src="https://lh3.googleusercontent.com/aida-public/AB6AXuDxb9L0VPF5BNsoBAF2JAHs31ty2gq4j-Tlp69OqO00jWvBPcfOKIn1plORIuf6XUV5cnsXHpZtNr1AtM7SFoeuMSjQgiZDogo4gwFuqdT_Qen8DKV_OL2pynWzZ7MlPPv0TvQ6xMFIS5R-Y9VYuqxuLCMI_Jn6GRsc4EO_zX9fesdQUcKStpT4tRvw-Mo32saVEng2zIi7Hr7fEvCkumm0c-IzTEwLydi7llrT3Vg" alt="Eventty Mobile UI Preview" class="project-img">
+              <span class="project-tag-floating">Mobile Application</span>
+            </div>
+            <div class="project-body">
+              <span class="project-number">PROJECT 01</span>
+              <h3 class="project-title">Eventty — School Event Management</h3>
+              <p class="project-desc">
+                A Flutter-based school event management application that helps students discover events, register for activities, and receive announcements in real-time.
+              </p>
+              <div class="tech-stack-badges">
+                <span class="tech-pill">Flutter</span>
+                <span class="tech-pill">Dart</span>
+                <span class="tech-pill">Supabase</span>
+                <span class="tech-pill">PostgreSQL</span>
+              </div>
+              <div class="project-actions">
+                <a href="#projects" class="btn-project primary" onclick="alert('Viewing Eventty App demo details.'); return false;">
+                  View Project
+                  <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"></path><polyline points="15 3 21 3 21 9"></polyline><line x1="10" y1="14" x2="21" y2="3"></line></svg>
+                </a>
+                <a href="https://github.com" target="_blank" rel="noopener noreferrer" class="btn-project">
+                  <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"></path></svg>
+                  GitHub
+                </a>
+              </div>
+            </div>
+          </article>
+
+          <!-- PROJECT 02 -->
+          <article class="project-card reveal">
+            <div class="project-preview">
+              <img src="assets/simas-project.png" alt="SIMAS Asset Management System Dashboard" class="project-img">
+              <span class="project-tag-floating">Web Application</span>
+            </div>
+            <div class="project-body">
+              <span class="project-number">PROJECT 02</span>
+              <h3 class="project-title">SIMAS — Asset Management System</h3>
+              <p class="project-desc">
+                Developed a web-based application designed to streamline asset management and data recording. The system helps organize asset information, monitor asset status, and improve overall asset management efficiency.
+              </p>
+              <div class="tech-stack-badges">
+                <span class="tech-pill">Laravel</span>
+                <span class="tech-pill">PHP</span>
+                <span class="tech-pill">Post</span>
+                <span class="tech-pill">JavaScript</span>
+              </div>
+              <div class="project-actions">
+                <a href="#projects" class="btn-project primary" onclick="alert('Viewing PKL Portal dashboard demo.'); return false;">
+                  View Project
+                  <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"></path><polyline points="15 3 21 3 21 9"></polyline><line x1="10" y1="14" x2="21" y2="3"></line></svg>
+                </a>
+                <a href="https://github.com/KarelKrnlius/simas-asset-management.git" target="_blank" rel="noopener noreferrer" class="btn-project">
+                  <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"></path></svg>
+                  GitHub
+                </a>
+              </div>
+            </div>
+          </article>
+
+          <!-- PROJECT 03 -->
+          <article class="project-card reveal">
+            <div class="project-preview" style="background: #111827; display: flex; align-items: center; justify-content: center; position: relative;">
+              <div style="text-align: center; color: #FFF; padding: 20px;">
+                <div style="font-family: 'Space Grotesk', monospace; font-size: 1.5rem; font-weight: 700; margin-bottom: 6px;">PORTFOLIO.V1</div>
+                <div style="font-size: 0.8rem; color: #9CA3AF;">Modern Minimalist Portfolio Experience</div>
+              </div>
+              <span class="project-tag-floating">Frontend Showcase</span>
+            </div>
+            <div class="project-body">
+              <span class="project-number">PROJECT 03</span>
+              <h3 class="project-title">Personal Developer Website</h3>
+              <p class="project-desc">
+                A responsive website project focused on modern interface design, frictionless accessibility, fluid typography, and delightful micro-interactions without third-party frameworks.
+              </p>
+              <div class="tech-stack-badges">
+                <span class="tech-pill">HTML5</span>
+                <span class="tech-pill">CSS3</span>
+                <span class="tech-pill">JavaScript ES6</span>
+              </div>
+              <div class="project-actions">
+                <a href="#home" class="btn-project primary">
+                  View Project
+                  <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"></path><polyline points="15 3 21 3 21 9"></polyline><line x1="10" y1="14" x2="21" y2="3"></line></svg>
+                </a>
+                <a href="https://github.com" target="_blank" rel="noopener noreferrer" class="btn-project">
+                  <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"></path></svg>
+                  GitHub
+                </a>
+              </div>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- CONTACT SECTION -->
+    <section class="section-border" id="contact">
+      <div class="container">
+        <div class="reveal">
+          <span class="section-eyebrow">Get In Touch</span>
+          <h2 class="section-title">Let's Work Together.</h2>
+          <p class="section-subtitle">Have an idea, project, or opportunity? Feel free to reach out.</p>
+        </div>
+
+        <div class="contact-grid">
+          <!-- CHANNELS -->
+          <div class="contact-info-panel reveal">
+            <div class="contact-card-list">
+              <a href="mailto:neevaxius.kenzie@example.com" class="contact-channel-card">
+                <div class="channel-icon">
+                  <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"></path><polyline points="22,6 12,13 2,6"></polyline></svg>
+                </div>
+                <div class="channel-details">
+                  <h4>Email</h4>
+                  <p>kenziemuara@gmail.com</p>
+                </div>
+              </a>
+
+              <a href="https://github.com" target="_blank" rel="noopener noreferrer" class="contact-channel-card">
+                <div class="channel-icon">
+                  <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"></path></svg>
+                </div>
+                <div class="channel-details">
+                  <h4>GitHub</h4>
+                  <p>github.com/Kenzie-Felix</p>
+                </div>
+              </a>
+
+              <a href="https://linkedin.com" target="_blank" rel="noopener noreferrer" class="contact-channel-card">
+                <div class="channel-icon">
+                  <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"></path><rect x="2" y="9" width="4" height="12"></rect><circle cx="4" cy="4" r="2"></circle></svg>
+                </div>
+                <div class="channel-details">
+                  <h4>LinkedIn</h4>
+                  <p>linkedin.com/in/neevaxius-kenzie</p>
+                </div>
+              </a>
+
+              <a href="https://instagram.com" target="_blank" rel="noopener noreferrer" class="contact-channel-card">
+                <div class="channel-icon">
+                  <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="2" width="20" height="20" rx="5" ry="5"></rect><path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"></path><line x1="17.5" y1="6.5" x2="17.51" y2="6.5"></line></svg>
+                </div>
+                <div class="channel-details">
+                  <h4>Instagram</h4>
+                  <p>@kennziien</p>
+                </div>
+              </a>
+            </div>
+          </div>
+
+          <!-- FORM -->
+          <div class="contact-form-panel reveal">
+            <form id="contactForm" onsubmit="handleFormSubmit(event)">
+              <div class="form-group-row">
+                <div>
+                  <label class="form-label" for="formName">Name</label>
+                  <input type="text" id="formName" class="form-input" placeholder="Your Full Name" required>
+                </div>
+                <div>
+                  <label class="form-label" for="formEmail">Email</label>
+                  <input type="email" id="formEmail" class="form-input" placeholder="name@domain.com" required>
+                </div>
+              </div>
+
+              <div class="form-group">
+                <label class="form-label" for="formSubject">Subject</label>
+                <input type="text" id="formSubject" class="form-input" placeholder="Collaboration or Internship Inquiry" required>
+              </div>
+
+              <div class="form-group">
+                <label class="form-label" for="formMessage">Message</label>
+                <textarea id="formMessage" class="form-textarea" placeholder="Hello Neevaxius, I would like to discuss..." required></textarea>
+              </div>
+
+              <button type="submit" class="btn btn-primary" style="width: 100%;">
+                Send Message
+                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="22" y1="2" x2="11" y2="13"></line><polygon points="22 2 15 22 11 13 2 9 22 2"></polygon></svg>
+              </button>
+
+              <div class="form-status-msg" id="formStatus"></div>
+            </form>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- FOOTER -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-top-row">
+        <div class="footer-brand">
+          <h2>PORTFOLIO.</h2>
+          <p>Neevaxius Kenzie — Frontend &amp; Web Developer</p>
+        </div>
+
+        <ul class="footer-nav">
+          <li><a href="#home">Home</a></li>
+          <li><a href="#about">About</a></li>
+          <li><a href="#experience">Experience</a></li>
+          <li><a href="#projects">Projects</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+      </div>
+
+      <div class="footer-bottom-row">
+        <p>&copy; 2026 Neevaxius Kenzie. All Rights Reserved.</p>
+        <div class="social-icons-row">
+          <a href="https://github.com" target="_blank" rel="noopener noreferrer" class="social-btn" style="width: 36px; height: 36px;" aria-label="GitHub">
+            <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"></path></svg>
+          </a>
+          <a href="https://linkedin.com" target="_blank" rel="noopener noreferrer" class="social-btn" style="width: 36px; height: 36px;" aria-label="LinkedIn">
+            <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"></path><rect x="2" y="9" width="4" height="12"></rect><circle cx="4" cy="4" r="2"></circle></svg>
+          </a>
+          <a href="https://instagram.com" target="_blank" rel="noopener noreferrer" class="social-btn" style="width: 36px; height: 36px;" aria-label="Instagram">
+            <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="2" width="20" height="20" rx="5" ry="5"></rect><path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"></path><line x1="17.5" y1="6.5" x2="17.51" y2="6.5"></line></svg>
+          </a>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <!-- BACK TO TOP BUTTON -->
+  <button class="back-to-top" id="backToTopBtn" aria-label="Back to Top">
+    <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="18 15 12 9 6 15"></polyline></svg>
+  </button>
+
+  <!-- VANILLA JAVASCRIPT INTERACTIONS -->
+  <script src=script.js></script>
+</body>
+</html>
