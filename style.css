@@ -702,6 +702,87 @@
       margin-bottom: 0;
     }
 
+    /* EDUCATION SECTION */
+    .education-grid {
+      display: grid;
+      grid-template-columns: repeat(3, minmax(0, 1fr));
+      gap: 24px;
+    }
+
+    .education-card {
+      background: var(--bg-surface);
+      border: 1px solid var(--border-subtle);
+      border-radius: var(--radius-xl);
+      padding: 28px 24px;
+      transition: var(--transition-smooth);
+    }
+
+    .education-card:hover {
+      border-color: var(--border-hover);
+      box-shadow: var(--shadow-md);
+      transform: translateY(-4px);
+    }
+
+    .education-card-top {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 12px;
+      margin-bottom: 20px;
+      flex-wrap: wrap;
+    }
+
+    .education-level {
+      font-size: 0.72rem;
+      font-weight: 700;
+      letter-spacing: 0.08em;
+      text-transform: uppercase;
+      color: var(--text-muted);
+    }
+
+    .education-year {
+      font-size: 0.76rem;
+      font-weight: 700;
+      color: var(--text-primary);
+      background: var(--accent-badge);
+      border-radius: var(--radius-pill);
+      padding: 6px 10px;
+    }
+
+    .education-icon-wrap {
+      width: 48px;
+      height: 48px;
+      border-radius: 14px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      background: var(--bg-surface-elevated);
+      border: 1px solid var(--border-subtle);
+      color: var(--text-primary);
+      margin-bottom: 18px;
+    }
+
+    .education-card h3 {
+      font-size: 1.35rem;
+      font-weight: 700;
+      letter-spacing: -0.02em;
+      color: var(--text-primary);
+      margin-bottom: 8px;
+    }
+
+    .education-major {
+      font-size: 0.95rem;
+      font-weight: 600;
+      color: var(--text-secondary);
+      margin-bottom: 10px;
+    }
+
+    .education-description {
+      font-size: 0.9rem;
+      color: var(--text-secondary);
+      line-height: 1.7;
+    }
+
     /* EXPERIENCE & SKILLS SECTION */
     .skills-category-grid {
       display: grid;
@@ -1270,6 +1351,10 @@
       }
 
       .about-grid, .contact-grid {
+        grid-template-columns: 1fr;
+      }
+
+      .education-grid {
         grid-template-columns: 1fr;
       }
     }

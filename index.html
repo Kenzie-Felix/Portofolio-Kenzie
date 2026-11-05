@@ -21,6 +21,7 @@
       <ul class="nav-links">
         <li><a href="#home" class="nav-link active">Home</a></li>
         <li><a href="#about" class="nav-link">About</a></li>
+        <li><a href="#education" class="nav-link">Education</a></li>
         <li><a href="#experience" class="nav-link">Experience</a></li>
         <li><a href="#projects" class="nav-link">Projects</a></li>
         <li><a href="#contact" class="nav-link">Contact</a></li>
@@ -46,6 +47,7 @@
   <div class="mobile-menu-overlay" id="mobileMenu">
     <a href="#home" class="mobile-nav-item">Home</a>
     <a href="#about" class="mobile-nav-item">About</a>
+    <a href="#education" class="mobile-nav-item">Education</a>
     <a href="#experience" class="mobile-nav-item">Experience</a>
     <a href="#projects" class="mobile-nav-item">Projects</a>
     <a href="#contact" class="mobile-nav-item">Contact</a>
@@ -196,7 +198,7 @@
             <div class="about-cards-row">
               <div class="info-card">
                 <h4>Education</h4>
-                <p>SMKN 20 Jakarta</p>
+                <p>SMKN 20 Jakarta (2027)</p>
                 <span style="font-size: 0.775rem; color: var(--text-muted);">Major in RPL</span>
               </div>
 
@@ -212,7 +214,60 @@
                 <span style="font-size: 0.775rem; color: var(--text-muted);">Responsive Systems</span>
               </div>
             </div>
+
           </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- EDUCATION SECTION -->
+    <section class="section-border" id="education">
+      <div class="container">
+        <div class="reveal">
+          <span class="section-eyebrow">Academic Journey</span>
+          <h2 class="section-title">Education</h2>
+          <p class="section-subtitle">Riwayat pendidikan dan perjalanan belajar saya sampai saat ini.</p>
+        </div>
+
+        <div class="education-grid">
+          <article class="education-card reveal">
+            <div class="education-card-top">
+              <span class="education-level">Vocational School</span>
+              <span class="education-year">2024 — 2027</span>
+            </div>
+            <div class="education-icon-wrap">
+              <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 10v6M2 10l10-5 10 5-10 5z"></path><path d="M6 12v5c3 3 9 3 12 0v-5"></path></svg>
+            </div>
+            <h3>SMKN 20 Jakarta</h3>
+            <p class="education-major">Rekayasa Perangkat Lunak (RPL)</p>
+            <p class="education-description">Membangun fondasi kuat dalam pemrograman, sistem informasi, dan desain produk digital.</p>
+          </article>
+
+          <article class="education-card reveal">
+            <div class="education-card-top">
+              <span class="education-level">Junior High School</span>
+              <span class="education-year">2021 — 2024</span>
+            </div>
+            <div class="education-icon-wrap">
+              <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M3 9l9-5 9 5-9 5-9-5z"></path><path d="M21 10v6c0 1.66-4.03 3-9 3s-9-1.34-9-3v-6"></path></svg>
+            </div>
+            <h3>SMPN 239</h3>
+            <p class="education-major">Sekolah Menengah Pertama</p>
+            <p class="education-description">Mengembangkan minat dalam teknologi, logika berpikir, dan kemampuan dasar analisis.</p>
+          </article>
+
+          <article class="education-card reveal">
+            <div class="education-card-top">
+              <span class="education-level">Elementary School</span>
+              <span class="education-year">2015 — 2021</span>
+            </div>
+            <div class="education-icon-wrap">
+              <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 2v20"></path><path d="M2 12h20"></path><path d="M4 4h16v16H4z"></path></svg>
+            </div>
+            <h3>SDN 05</h3>
+            <p class="education-major">Sekolah Dasar Negeri</p>
+            <p class="education-description">Awal perjalanan belajar dimana rasa ingin tahu dan disiplin mulai tumbuh.</p>
+          </article>
         </div>
       </div>
     </section>
@@ -398,10 +453,6 @@
                 <span class="tech-pill">PostgreSQL</span>
               </div>
               <div class="project-actions">
-                <a href="#projects" class="btn-project primary" onclick="alert('Viewing Eventty App demo details.'); return false;">
-                  View Project
-                  <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"></path><polyline points="15 3 21 3 21 9"></polyline><line x1="10" y1="14" x2="21" y2="3"></line></svg>
-                </a>
                 <a href="https://github.com" target="_blank" rel="noopener noreferrer" class="btn-project">
                   <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"></path></svg>
                   GitHub
@@ -429,10 +480,6 @@
                 <span class="tech-pill">JavaScript</span>
               </div>
               <div class="project-actions">
-                <a href="#projects" class="btn-project primary" onclick="alert('Viewing PKL Portal dashboard demo.'); return false;">
-                  View Project
-                  <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"></path><polyline points="15 3 21 3 21 9"></polyline><line x1="10" y1="14" x2="21" y2="3"></line></svg>
-                </a>
                 <a href="https://github.com/KarelKrnlius/simas-asset-management.git" target="_blank" rel="noopener noreferrer" class="btn-project">
                   <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"></path></svg>
                   GitHub
@@ -462,10 +509,6 @@
                 <span class="tech-pill">JavaScript ES6</span>
               </div>
               <div class="project-actions">
-                <a href="#home" class="btn-project primary">
-                  View Project
-                  <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"></path><polyline points="15 3 21 3 21 9"></polyline><line x1="10" y1="14" x2="21" y2="3"></line></svg>
-                </a>
                 <a href="https://github.com" target="_blank" rel="noopener noreferrer" class="btn-project">
                   <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"></path></svg>
                   GitHub
@@ -581,6 +624,7 @@
         <ul class="footer-nav">
           <li><a href="#home">Home</a></li>
           <li><a href="#about">About</a></li>
+          <li><a href="#education">Education</a></li>
           <li><a href="#experience">Experience</a></li>
           <li><a href="#projects">Projects</a></li>
           <li><a href="#contact">Contact</a></li>
