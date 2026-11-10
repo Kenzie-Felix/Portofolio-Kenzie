@@ -50,14 +50,16 @@ My focus is on modern frontend development, responsive interfaces, and the pract
 ## Featured Projects
 
 ### 1. Eventty — School Event Management
-A Flutter-based school event management application designed to help students discover events, register for activities, and receive announcements in real time.
+A web-based school event management system that lets students discover events, register, track attendance, and access certificates, while OSIS admins manage events and announcements.
 
-**Tech:** Flutter, Dart, Supabase, PostgreSQL
+**Tech:** Laravel, PHP, Blade, Vite, Tailwind CSS, MySQL
 
 **Highlights:**
-- Mobile-first event management experience
-- Event discovery and registration flow
-- Announcement and activity updates
+- Student and OSIS admin dashboards
+- Event registration and attendance tracking
+- Certificate and announcement management
+
+**Repository:** [fathirizkiansyah8-lgtm/eventty](https://github.com/fathirizkiansyah8-lgtm/eventty)
 
 ### 2. SIMAS — Asset Management System
 A web-based application designed to streamline asset management and data recording. The system helps organize asset information and improve operational efficiency.
@@ -69,15 +71,17 @@ A web-based application designed to streamline asset management and data recordi
 - Structured information recording
 - Documentation-friendly workflow for asset tracking
 
-### 3. Personal Developer Website
-A responsive personal portfolio website focused on modern interface design, accessibility, fluid typography, and micro-interactions.
+### 3. SIMBAR — Office Inventory Management
+A web-based office inventory system for managing equipment, monitoring stock, and handling borrowing and returns for admins and staff.
 
-**Tech:** HTML5, CSS3, JavaScript ES6
+**Tech:** Laravel, PHP 8.4, MySQL, Bootstrap 5
 
 **Highlights:**
-- Clean minimalist design
-- Responsive layout
-- Smooth UI interactions and navigation
+- Inventory and stock management
+- Staff borrowing requests and return verification
+- Role-based access for admins and staff
+
+**Repository:** [Kenzie-Felix/simbar](https://github.com/Kenzie-Felix/simbar)
 
 ## Skills
 
